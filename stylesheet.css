@@ -1,0 +1,114 @@
+* {
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(240, 240, 240);
+}
+
+/*I want the hyperlinks to look better*/
+a {
+    color: black;
+    background-color: transparent;
+}
+
+a:hover {
+    filter: brightness(85%);
+}
+
+.header {
+    background-color: rgb(137, 137, 250);
+    padding: 20px;
+    width: 100%;
+
+}
+
+.header ul {
+    background-color: rgb(137, 137, 250);
+    text-align: center;
+}
+
+.header ul li {
+    background-color: rgb(137, 137, 250);
+    display: inline;
+    margin: 75px;
+    font-size: 25px;
+}
+
+/*my image displayed*/
+#profPic {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 15px;
+}
+
+.aboutMe {
+    font-size: 20px;
+    display: flex;
+}
+
+/*this is for the about me description*/
+#boxDiv {
+    /*border: 5px solid black;*/
+    width: 80%;
+    float: center;
+    margin: 10px;
+    display: block;
+}
+
+.myWork {
+    text-align: center;
+}
+
+/*generic boxes for the 'my work' part to make it look nicer*/
+#myWorkBoxLeft {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    background-color: lightcoral;
+    width: 35%;
+    height: 100px;
+    padding: 30px;
+    border: 3px solid black;
+    margin: 3px;
+    float: left;
+}
+
+/*same as above comment for myWorkBoxLeft*/
+#myWorkBoxRight {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    background-color: lightblue;
+    width: 35%;
+    height: 100px;
+    padding: 30px;
+    border: 3px solid black;
+    margin: 3px;
+    float: right;
+
+}
+
+.footer {
+    background-color: rgb(137, 137, 250);  
+    position: fixed;
+    text-align: center;
+    display: block;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer ul {
+    background-color: rgb(137, 137, 250);
+}
+
+.footer h3 {
+    background-color: rgb(137, 137, 250);
+    text-align: center;
+}
+
+.footer ul li {
+    background-color: rgb(137, 137, 250);
+    display: inline;
+    margin: 10px;
+    font-size:20px;
+    text-align: center;
+}
