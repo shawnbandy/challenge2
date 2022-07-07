@@ -21,7 +21,7 @@ a:hover {
 .header nav {
     background-color: rgb(137, 137, 250);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .header nav li {
