@@ -116,12 +116,15 @@ a:hover {
 
 .footer ul {
     background-color: rgb(137, 137, 250);
+    display: flex;
+    justify-content: center;
+    
 }
 
 .footer ul li {
     background-color: rgb(137, 137, 250);
-    display: inline;
-    margin: 10px;
+    list-style: none;
+    margin: 5px;
     font-size:20px;
     text-align: center;
 }
