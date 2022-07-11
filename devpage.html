@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <!--okay I had to look this up and copied it from https://stackoverflow.com/questions/30706407/css-max-width-for-media-query-not-working
-    I COULD NOT get the mobile version to run properly using the /@media screen/ on the stylesheet, and found out that adding this meta thing makes it work somehow-->
     <link rel="reset" href="assests/reset.css">
     <link rel="stylesheet" href="assets/stylesheet.css">
     <title>Shawn Canavan Page</title> 
@@ -60,13 +58,24 @@
         <strong id="myWorkJump" style="display: flex; justify-content: center;">My Work</strong>
     </h2>
     <section class="myWork"> <!--this will be "my work" section-- linking to Github, codewars, and my linkedin-->
+
+        <div class="myWork">
+            <img class="myWorkImage" src="assets/img/LinkedIN_profpic.png" alt="Header picture of a linked-in page with a profile picture and 'my linkedIN' displayed"><a href="https://www.linkedin.com/in/shawn-canavan-27783b128/" target="_blank"></a></img>
+            <img class="myWorkImage" src="assets/img/GitHub_img.png" alt="Black box with 'GitHub' displayed in white"><a href="https://github.com/shawnbandy" target="_blank"></a></img>
+            <img class="myWorkImage" src="assets/img/codewars_logo.png" alt="Black box with 'Codewars Achieve Mastery Through Challenge' displayed in white, and a red box with a black flower in the middle next to it"><a href="https://www.codewars.com/users/shawnbandy" target="_blank"></a></img>
+            <img class="myWorkImage" src="assets/img/codewars_logo.png" alt="Black box with 'GitHub' displayed in white"><a href="https://www.codewars.com/users/shawnbandy" target="_blank"></a></img>
+        </div>
+
+        <!-- commenting this out for now, want to use actual images instead of boxes
         <div>
             <a href="https://github.com/shawnbandy" target="_blank"><li id="myWorkBoxLeft">Check some code on Github</li></a>
             <a href="https://www.codewars.com/users/shawnbandy" target="_blank"><li id="myWorkBoxRight">See how I solve problems on codewars</li></a>
-            <!--going to still use the same id for these below two boxes, but change their colors-->
+            <--going to still use the same id for these below two boxes, but change their colors--
             <a href="https://www.linkedin.com/in/shawn-canavan-27783b128/" target="_blank"><li id="myWorkBoxLeft" style="background-color: lightsalmon;">Here's some other work experience at my LinkedIn</li></a>
             <a href="https://github.com/shawnbandy" target="_blank"><li id="myWorkBoxRight" style="background-color: lightgreen;">Lopo insum et alibaba tori de sum ate</li></a>
         </div>
+        -->
+
     </section>
 
     <footer class="footer"> <!--This will be the contact me section. Putting in fake phone number, but email and other stuff can be real-->

@@ -69,7 +69,21 @@ a:hover {
 }
 
 .myWork {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.myWorkImage {
+    display: flex;
+    width: 49%;
+    height: 245px;
+    margin: 10px;
+}
+
+.myWorkImage:hover {
+    opacity: 80%;
+    cursor: pointer;
 }
 
 /*generic boxes for the 'my work' part to make it look nicer*/
@@ -102,10 +116,11 @@ a:hover {
 
 .footer {
     background-color: rgb(137, 137, 250);  
-    position: absolute;
+    position: fixed;
     text-align: center;
-    display: block;
+    display: flex;
     bottom: 0;
+    justify-content: center;
     width: 100%;
 }
 
@@ -136,7 +151,6 @@ a:hover {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-        background-color: red;
     }
 
     #boxDiv {
@@ -161,6 +175,11 @@ a:hover {
         float: none;
         display: flex;
         justify-content: center;
+    }
+
+    .myWorkImage {
+        width: 100%;
+        height: 245px;
     }
 
     .header {
