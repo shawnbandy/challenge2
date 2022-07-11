@@ -13,6 +13,12 @@ a:hover {
     filter: brightness(85%);
 }
 
+body {
+    min-height: 400px;
+    margin-bottom: 100px;
+    clear: both;
+ }
+
 .header {
     background-color: rgb(137, 137, 250);
     width: 100%;
@@ -70,9 +76,18 @@ a:hover {
 
 .myBigWork {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    height: 1000px;
+    height: 600px;
+    margin: 1px;
+}
+
+#myBigWorkImage {
+    display: flex;
+    width: 60%;
+    height: 600px;
+    margin: 10px;
 }
 
 .myBigWork:hover {
@@ -90,7 +105,8 @@ a:hover {
     display: flex;
     width: 49%;
     height: 245px;
-    margin: 10px;
+    margin-left: 1px;
+    margin-top: 1px;
 }
 
 .myWorkImage:hover {
@@ -98,7 +114,8 @@ a:hover {
     cursor: pointer;
 }
 
-/*generic boxes for the 'my work' part to make it look nicer*/
+/*generic boxes for the 'my work' part to make it look nicer
+may delete*/
 #myWorkBoxLeft {
     display: block;
     text-align: center;
@@ -112,7 +129,8 @@ a:hover {
     float: left;
 }
 
-/*same as above comment for myWorkBoxLeft*/
+/*same as above comment for myWorkBoxLeft
+may delete*/
 #myWorkBoxRight {
     display: block;
     text-align: center;
@@ -163,6 +181,8 @@ a:hover {
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
+        min-height: auto;
+        margin-bottom: 0px;
     }
 
     #boxDiv {
@@ -192,6 +212,13 @@ a:hover {
     .myWorkImage {
         width: 100%;
         height: 245px;
+    }
+    
+    #myBigWorkImage {
+        display: flex;
+        width: 100%;
+        height: 600px;
+        margin: 10px;
     }
 
     .header {
