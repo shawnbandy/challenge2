@@ -15,6 +15,7 @@
         <nav>
             <li><a href="#aboutMeJump">About Me</a></li>
             <li><a href="#myWorkJump">My Work</a></li>
+            <li><a href="#mySkillsJump">My CSS/HTML Skills</a></li>
             <li><a href="#myContactJump">Contact Me</a></li>
         </nav>
     </header>
@@ -22,16 +23,17 @@
     <h2 style="text-align: center;">
         <strong id="aboutMeJump"">About Me</strong>
     </h2>
-    <!--sneaky div is ONLY set to appear when viewed on mobile, so we can have the picture on top of the aboutMe paragraphs-->
+
+    <!--*sneaky div is ONLY set to appear when viewed on mobile, so we can have the picture on top of the aboutMe paragraphs-->
     <div id="sneakyDiv">
         <img id="sneakyPic" src="https://pbs.twimg.com/profile_images/1506417451759718402/gN4K7JBN_400x400.jpg" alt="Man with dark hair and glasses wearing a shiny jacket sitting down at a restaraunt">
     </div>
 
-    <section class="aboutMe"> <!--about me section-->
+    <section class="aboutMe"> <!--*about me section-->
         <aside>
             <img id="profPic" src="https://pbs.twimg.com/profile_images/1506417451759718402/gN4K7JBN_400x400.jpg" alt="Man with dark hair and glasses wearing a shiny jacket sitting down at a restaraunt">
         </aside>
-        <!--This div part is to make the biography block-->
+        <!--*This div part is to make the biography block-->
         <div id="boxDiv">  
             <p1>
                 Hey there! My name is Shawn Canavan. I'm 26 years old and currently live in Roanoke, VA. My daytime job is media production with Bramson Productions. Other than that, I love to cycle, hike, play video games, and cook. 
@@ -57,7 +59,11 @@
     <h2>
         <strong id="myWorkJump" style="display: flex; justify-content: center;">My Work</strong>
     </h2>
-    <section class="myWork"> <!--this will be "my work" section-- linking to Github, codewars, and my linkedin-->
+    <section class="myWork"> <!--*this will be "my work" section-- linking to Github, codewars, and my linkedin-->
+
+        <div class="myBigWork">
+            <img src="assets/img/wow.jpg"><a href="https://shawnbandy.github.io/challenge2/memepage"></a></img>
+        </div>
 
         <div class="myWork">
             <img class="myWorkImage" src="assets/img/LinkedIN_profpic.png" alt="Header picture of a linked-in page with a profile picture and 'my linkedIN' displayed"><a href="https://www.linkedin.com/in/shawn-canavan-27783b128/" target="_blank"></a></img>
@@ -66,7 +72,7 @@
             <img class="myWorkImage" src="assets/img/codewars_logo.png" alt="Black box with 'GitHub' displayed in white"><a href="https://www.codewars.com/users/shawnbandy" target="_blank"></a></img>
         </div>
 
-        <!-- commenting this out for now, want to use actual images instead of boxes
+        <!--*commenting this out for now, want to use actual images instead of boxes
         <div>
             <a href="https://github.com/shawnbandy" target="_blank"><li id="myWorkBoxLeft">Check some code on Github</li></a>
             <a href="https://www.codewars.com/users/shawnbandy" target="_blank"><li id="myWorkBoxRight">See how I solve problems on codewars</li></a>
@@ -75,10 +81,14 @@
             <a href="https://github.com/shawnbandy" target="_blank"><li id="myWorkBoxRight" style="background-color: lightgreen;">Lopo insum et alibaba tori de sum ate</li></a>
         </div>
         -->
+    </section>
+    
+    <!-- TODO This below section is going to be mySkills, where I show off a little bit of CSS that we've been learning-->
+    <section class="mySkills">
 
     </section>
 
-    <footer class="footer"> <!--This will be the contact me section. Putting in fake phone number, but email and other stuff can be real-->
+    <footer class="footer"> <!--*This will be the contact me section. Putting in fake phone number, but email and other stuff can be real-->
         <h3 id="myContactJump">Contact Me</h3>
         <ul>
             <li><a href="tel:555-555-5555">Phone Number</a></li>

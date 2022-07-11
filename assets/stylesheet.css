@@ -68,6 +68,18 @@ a:hover {
     display: block;
 }
 
+.myBigWork {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 1000px;
+}
+
+.myBigWork:hover {
+    opacity: 80%;
+    cursor: pointer;
+}
+
 .myWork {
     display: flex;
     flex-wrap: wrap;
