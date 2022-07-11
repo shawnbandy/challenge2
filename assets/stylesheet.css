@@ -127,6 +127,26 @@ body {
     cursor: pointer;
 }
 
+.show {
+    display: flex;
+    justify-content: center;
+}
+
+.andTell {
+    display: none;
+    align-items: center;
+}
+
+.show:hover + .andTell {
+    display: flex;
+    flex-direction: column;
+}
+
+.andTell:hover {
+    display:flex;
+    justify-content: center;
+}
+
 .test{
     display: flex;
     flex-wrap: wrap;
