@@ -239,7 +239,7 @@ may delete*/
         flex-direction: column;
         align-items: center;
         min-height: auto;
-        margin-bottom: 0px;
+        margin-bottom: 10px;
     }
 
     #boxDiv {
@@ -304,14 +304,18 @@ may delete*/
         margin: 10px;
     }
 
+    
     .footer {
         position: unset;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        height: auto;
     }
 
     .footer h3 {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         flex-direction: column;
     }
@@ -322,6 +326,7 @@ may delete*/
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 20px;
     }
-
+    
 }
