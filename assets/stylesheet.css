@@ -80,13 +80,13 @@ body {
     justify-content: center;
     width: 100%;
     height: 600px;
-    margin: 1px;
+    
 }
 
 #myBigWorkImage {
     display: flex;
-    width: 60%;
-    height: 600px;
+    width: 80%;
+    height:550px;
     margin: 10px;
 }
 
@@ -103,15 +103,36 @@ body {
 
 .myWorkImage {
     display: flex;
-    width: 49%;
+    width: 40%;
     height: 245px;
-    margin-left: 1px;
+    margin-left: 10px;
     margin-top: 1px;
+   
 }
 
 .myWorkImage:hover {
     opacity: 80%;
     cursor: pointer;
+}
+
+.test{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.test a {
+   display: flex;
+   flex-wrap: wrap;
+    border: 3px solid black;
+    height: 245px;
+    width: 40%;
+    margin: 1px;
+}
+
+.test a img {
+   width: 100%;
+   height: 100%;
 }
 
 /*generic boxes for the 'my work' part to make it look nicer
