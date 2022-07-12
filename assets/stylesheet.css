@@ -1,3 +1,12 @@
+
+/*we just learned about vars, so I'm going through and replacing some repeating instances with vars*/
+:root {
+    --BG: background-color: rgb(137, 137, 250);
+    --OH: 100%;
+    --eightO: 80%;
+    --twoOpx: 20px;
+}
+
 * {
     font-family:'Times New Roman', Times, serif;
     background-color: rgb(240, 240, 240);
@@ -20,22 +29,26 @@ body {
  }
 
 .header {
-    background-color: rgb(137, 137, 250);
-    width: 100%;
+    background-color: var(--BG);
+    width: var(--OH);
 }
 
 .header nav {
-    background-color: rgb(137, 137, 250);
+    background-color: var(--BG);
     display: flex;
     justify-content: center;
     justify-content: space-around;
 }
 
 .header nav li {
-    background-color: rgb(137, 137, 250);
+    background-color: var(--BG);
     list-style: none;
     margin: 35px;
     font-size: 25px;
+}
+
+.header nav li:hover {
+    opacity: var(--eightO);
 }
 
 #sneakyDiv {
@@ -59,21 +72,25 @@ body {
     flex: 1 1 200px;
 }
 
+/*was recommended to use EMs here, but I'll figure that out later on my own time*/
+
 .aboutMe {
-    font-size: 20px;
+    font-size: var(--twoOpx);
     display: flex;
     justify-content: center;
 }
 
 /*this is for the about me description*/
+
 #boxDiv {
     /*border: 5px solid black;*/
-    width: 80%;
+    width: var(--eightO);
     float: center;
     margin: 10px;
     display: block;
 }
 
+/*for the big picture*/
 .myBigWork {
     display: flex;
     flex-wrap: wrap;
@@ -86,12 +103,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     height: inherit;
-    width: 100%;
+    width: var(--OH);
 }
 
 .myBigWork a img {
-    width: 100%;
-    height: 100%;
+    width: var(--OH);
+    height: var(--OH);
 }
 
 #myBigWorkImage {
@@ -102,7 +119,7 @@ body {
 }
 
 .myBigWork:hover {
-    opacity: 80%;
+    opacity: var(--eightO);
     cursor: pointer;
 }
 
@@ -112,6 +129,7 @@ body {
     justify-content: center;
 }
 
+/*show and tell (MTG reference) is for extra work to make a pic appear when hovered over*/
 .show {
     display: flex;
     justify-content: center;
@@ -133,6 +151,7 @@ body {
     justify-content: center;
 }
 
+/*test is used for the myWork section for the images*/
 .test{
     display: flex;
     flex-wrap: wrap;
@@ -148,13 +167,14 @@ body {
 }
 
 .test a img {
-   width: 100%;
-   height: 100%;
+   width: var(--OH);
+   height: var(--OH);
 }
 
+/*FAQ, question, and answer classes are extra*/
 .FAQ {
     display: flex;
-    width: 100%;
+    width: var(--OH);
     justify-content: center;
     text-align: center;
 }
@@ -183,32 +203,32 @@ body {
 }
 
 .footer {
-    background-color: rgb(137, 137, 250);  
+    background-color: var(--BG);  
     position: fixed;
     text-align: center;
     display: flex;
     bottom: 0;
     justify-content: center;
-    width: 100%;
+    width: var(--OH);
 }
 
 .footer h3 {
-    background-color: rgb(137, 137, 250);
+    background-color: var(--BG);
     text-align: center;
 }
 
 .footer ul {
-    background-color: rgb(137, 137, 250);
+    background-color: var(--BG);
     display: flex;
     justify-content: center;
     
 }
 
 .footer ul li {
-    background-color: rgb(137, 137, 250);
+    background-color: var(--BG);
     list-style: none;
     margin: 5px;
-    font-size:20px;
+    font-size:var(--twoOpx);
     text-align: center;
 }
 
@@ -228,10 +248,11 @@ body {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: var(--OH);
         margin: 0px;
     }
 
+    /*aside, sneakyDiv, and profPic are set so that prof pic disappears and sneakyDiv appears when on mobile*/
     aside {
         display: none;
     }
@@ -251,7 +272,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
+        width: var(--OH);
         height: 600px;
     }
 
@@ -259,7 +280,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         height: 245px;
-        width: 100%;
+        width: var(--OH);
         margin: 1px;
      }
 
@@ -303,7 +324,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: var(--twoOpx);
     }
     
 }
