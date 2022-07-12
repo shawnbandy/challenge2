@@ -49,7 +49,6 @@ body {
     flex: 1 1 200px;
 }
 
-
 /*my image displayed*/
 #profPic {
     display: flex;
@@ -116,6 +115,7 @@ body {
 .show {
     display: flex;
     justify-content: center;
+    border: 1px solid black;
 }
 
 .andTell {
@@ -154,9 +154,32 @@ body {
 
 .FAQ {
     display: flex;
+    width: 100%;
     justify-content: center;
 }
 
+.question {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 10px;
+}
+
+.question p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.answer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.answer p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 .footer {
     background-color: rgb(137, 137, 250);  
